@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p 01-git 02-setup _templates _session-log)",
+      "Bash(mv plantilla-doc.md _templates/plantilla-doc.md)",
+      "Bash(mv ejemplo-pull-github.md 01-git/pull-clone-fetch.md)",
+      "Bash(mv instalar-dependencias-node.md 02-setup/instalar-dependencias-node.md)",
+      "Bash(ls C:/Users/Humbe/.claude/projects/c--Users-Humbe-Documents-Programacion-The-Dev-Guide/memory/ 2>&1)",
+      "Read(//c/Users/Humbe/.claude/projects/c--Users-Humbe-Documents-Programacion-The-Dev-Guide/**)"
+    ]
+  }
+}
