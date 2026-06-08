@@ -1,54 +1,79 @@
-# [Título del tema]
-
-> Descripción corta de qué resuelve este documento.
-
-**Última actualización:** YYYY-MM-DD
-**Estado:** ✅ Probado | ⚠️ Por validar | 🔄 En proceso
-
+---
+title: Título del tema
+status: draft
+tags: []
+related: []
+sources: []
+updated: YYYY-MM-DD
 ---
 
-## 🎯 ¿Cuándo uso esto?
+# Título del tema
 
-Describe el escenario real donde necesitas esto. Ejemplo:
-> Cuando clono un repo nuevo y quiero correrlo en mi máquina por primera vez.
+> Explicación de una frase que ayude a reconocer rápidamente el concepto.
 
----
+## Idea principal
 
-## 📋 Pasos
+Explica el modelo mental del tema con palabras propias.
 
-### 1. [Primer paso]
-```bash
-comando aquí
+## Qué es
+
+Define el concepto y aclara qué tipo de cosa es: principio, lenguaje,
+framework, librería, herramienta, patrón u otra categoría.
+
+## Por qué existe
+
+Describe el problema que intenta resolver y qué ocurriría sin este concepto.
+
+## Cuándo usarlo
+
+- Escenario donde aporta valor.
+- Señal que indica que probablemente se necesita.
+
+## Cuándo no usarlo
+
+- Caso donde agrega complejidad innecesaria.
+- Alternativa más simple, si existe.
+
+## Cómo funciona
+
+Explica sus partes y el flujo principal. Agrega una tabla o diagrama solamente
+si mejora la comprensión.
+
+## Ejemplo mínimo
+
+```text
+Ejemplo pequeño y enfocado.
 ```
-Qué hace: explicación breve.
 
-### 2. [Segundo paso]
-```bash
-otro comando
-```
+Explica qué demuestra el ejemplo, no cada línea obvia.
 
----
+## Formas comunes de aplicarlo
 
-## ⚠️ Errores comunes
+Describe las variantes importantes, sus diferencias y sus tradeoffs.
 
-### Error: `mensaje del error`
-**Causa:** por qué pasa.
-**Solución:**
-```bash
-comando para arreglarlo
-```
+## Errores y confusiones frecuentes
 
----
+### Confusión o error
 
-## 💡 Tips personales
+**Causa:** por qué sucede.
 
-- Cosa que aprendí a la mala.
-- Atajo que descubrí.
+**Solución:** cómo corregirlo o entenderlo mejor.
 
----
+## Práctica
 
-## 🔗 Fuentes
+Pregunta o ejercicio breve para recuperar el concepto sin mirar la respuesta.
+
+<details>
+<summary>Ver respuesta o solución</summary>
+
+Respuesta razonada o ejemplo de solución.
+
+</details>
+
+## Conceptos relacionados
+
+- [Concepto relacionado](../ruta/al/documento.md)
+
+## Fuentes
 
 - [Documentación oficial](https://url-aqui)
-- [Tutorial donde lo aprendí](https://url-aqui)
-- Stack Overflow respuesta: [link]

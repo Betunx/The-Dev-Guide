@@ -1,61 +1,119 @@
-# 🛠️ The Dev Guide
+# The Dev Guide
 
-> Manual personal de supervivencia como desarrollador. Comandos, herramientas y métodos que uso en mi día a día. Pensado para consultar rápido cuando no me acuerdo cómo hacer X cosa, y para crecer a lo largo del tiempo.
+> Memoria técnica personal para aprender, practicar y consultar conceptos de
+> desarrollo sin depender de recordar todo de memoria.
 
-**Última actualización:** 2026-05-12
+**Última actualización:** 2026-06-08
 
----
+## Propósito
 
-## 🗂️ Índice
+Este repositorio reúne explicaciones con palabras propias, ejemplos pequeños,
+ejercicios, errores frecuentes y fuentes oficiales.
 
-### 01 · Git & GitHub
+No busca copiar documentación ni convertirse en un curso gigante. Cada tema
+debe ayudar a responder:
+
+- ¿Qué es?
+- ¿Por qué existe?
+- ¿Cuándo conviene usarlo?
+- ¿Cómo funciona?
+- ¿Cómo puedo practicarlo?
+
+## Organización
+
+La guía se clasifica por la naturaleza del conocimiento:
+
+| Carpeta | Contenido | Ejemplos |
+|---|---|---|
+| `fundamentals/` | Conceptos independientes de una tecnología | testing, HTTP, SOLID |
+| `languages/` | Características propias de lenguajes | JavaScript, TypeScript, C# |
+| `technologies/` | Frameworks, librerías y runtimes | React, Redux, Angular, Node.js, .NET |
+| `tools/` | Herramientas y servicios de trabajo | Git, Docker, Prettier, Vercel |
+| `_inbox/` | Notas crudas o pendientes de clasificar | ideas de una sesión |
+| `_archive/` | Contenido deprecado conservado como referencia | formas antiguas |
+
+Las carpetas nacen cuando existe un tema real. No se crean directorios vacíos
+solo para representar el plan futuro.
+
+## Contenido actual
+
+### Fundamentos
+
+- [Gestión de estado en frontend](./fundamentals/gestion-de-estado.md)
+- [Arquitectura frontend](./fundamentals/arquitectura-frontend.md)
+
+### Lenguajes
+
+- [TypeScript](./languages/typescript/README.md)
+
+### Tecnologías
+
+- [Índice de tecnologías](./technologies/README.md)
+- [React](./technologies/react/README.md)
+- [React Router](./technologies/react-router/README.md)
+- [Redux Toolkit y RTK Query](./technologies/redux/README.md)
+- [SWR](./technologies/swr/README.md)
+- [Zustand](./technologies/zustand/README.md)
+- [Jotai](./technologies/jotai/README.md)
+- [React Hook Form](./technologies/react-hook-form/README.md)
+- [Axios](./technologies/axios/README.md)
+
+### Git y GitHub
+
 - [Pull, clone y fetch](./01-git/pull-clone-fetch.md)
-- [Autenticación: PAT y GitHub CLI](./01-git/auth-pat-y-gh-cli.md)
+- [Autenticación con PAT y GitHub CLI](./01-git/auth-pat-y-gh-cli.md)
 
-### 02 · Setup de proyectos
-- [Instalar dependencias en proyecto Node](./02-setup/instalar-dependencias-node.md)
+### Preparación de proyectos
 
-### Próximas secciones (placeholders)
-- `03-run/` — cómo correr proyectos (React, Angular, Next, Python…)
-- `04-deploy/` — Vercel, Netlify, Railway, Docker básico
-- `05-database/` — Postgres local, MongoDB, conexiones
-- `06-debugging/` — errores comunes y herramientas
-- `07-terminal/` — Bash, PowerShell, atajos
-- `99-recursos/` — links, extensiones, cheatsheets
+- [Instalar dependencias en un proyecto Node](./02-setup/instalar-dependencias-node.md)
 
----
+`01-git/` y `02-setup/` son rutas históricas. Se migrarán gradualmente a la
+nueva clasificación cuando se trabaje específicamente en esos documentos.
 
-## 📝 Cómo uso este repo
+## Cómo agregar un concepto
 
-1. **Cuando aprendo algo nuevo:** lo documento aquí inmediatamente, aunque sea en bruto. Uso [`_templates/plantilla-doc.md`](./_templates/plantilla-doc.md) como base.
-2. **Cuando me atoro:** vengo aquí primero antes de googlear.
-3. **Al final de cada sesión de programación:** reviso [`_session-log/`](./_session-log/README.md) para capturar lo nuevo que aprendí esa sesión (manualmente o con ayuda de Claude Code).
+1. Buscar si ya existe un documento canónico.
+2. Clasificarlo como fundamento, lenguaje, tecnología o herramienta.
+3. Usar [`_templates/plantilla-doc.md`](./_templates/plantilla-doc.md).
+4. Explicarlo con ejemplos y fuentes oficiales.
+5. Enlazar conceptos relacionados sin duplicar contenido.
+6. Actualizar el índice del área.
+7. Revisar el cambio antes de hacer commit.
 
-### Cada doc debe tener
-- Comando o pasos exactos
-- Explicación corta de qué hace
-- Link a la documentación oficial
-- Errores comunes que me han pasado y cómo los resolví
+Los conceptos generados con ayuda de IA comienzan con `status: generated`.
+Después de estudiarlos, probarlos o revisarlos, pueden cambiar a
+`status: verified`.
 
-### Convenciones
-- Comandos en bloques con su lenguaje (` ```bash `, ` ```powershell `, ` ```javascript `).
-- Siempre incluir la fuente al final.
-- ✅ probado · ⚠️ por validar · 🔄 en proceso
+## Trabajo con IA
+
+Las reglas compartidas para Claude Code, Codex, ChatGPT y otras herramientas
+están en [`AGENTS.md`](./AGENTS.md).
+
+El flujo esperado es:
+
+```text
+concepto enviado
+  -> buscar contenido existente
+  -> elegir ubicación
+  -> explicar y relacionar
+  -> agregar al archivo canónico
+  -> revisar diff
+  -> validar
+```
+
+Una conversación puede ser amplia. El documento final debe quedar ordenado,
+sin repeticiones y en la ubicación que le corresponde.
+
+## Planeación
+
+- [Plan de acción actual](./PLAN-ACCION.md)
+- [Plan original conservado como contexto](./the-dev-guide-plan.md)
+
+## Convenciones
+
+- Un concepto tiene un solo documento canónico.
+- Archivos y carpetas usan minúsculas y guiones.
 - Fechas en formato `YYYY-MM-DD`.
-
----
-
-## 🚀 Flujo de captura rápida (fin de sesión)
-
-Al final de una sesión de programación, en 2-3 minutos:
-
-1. Abrir [`_session-log/README.md`](./_session-log/README.md) y anotar bullets crudos de lo aprendido (comandos, tecnos nuevas, errores resueltos).
-2. Si algo merece su propio doc, copiar [`_templates/plantilla-doc.md`](./_templates/plantilla-doc.md) a la carpeta correspondiente.
-3. Commit con mensaje descriptivo:
-   ```bash
-   git add .
-   git commit -m "docs: agrega <tema> y notas de sesión YYYY-MM-DD"
-   git push
-   ```
-
-> 💡 Si trabajo con Claude Code, le pido al final: *"organiza lo que aprendí hoy en el repo según las convenciones"* y revisa el diff antes de commit.
+- Los bloques de código indican su lenguaje.
+- Las fuentes oficiales tienen prioridad.
+- Los commits se hacen por intención, no por cantidad de archivos.

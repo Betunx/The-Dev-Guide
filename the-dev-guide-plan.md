@@ -1,5 +1,9 @@
 # The Dev Guide — Plan del proyecto
 
+> Documento histórico. Conserva la propuesta original por tecnología.
+> Las decisiones vigentes están en [`PLAN-ACCION.md`](./PLAN-ACCION.md) y
+> las reglas para IAs están en [`AGENTS.md`](./AGENTS.md).
+
 ## ¿Qué es?
 Repo personal de documentación técnica en GitHub.  
 Organizado por **tecnología + versión**, con teoría y práctica.  
